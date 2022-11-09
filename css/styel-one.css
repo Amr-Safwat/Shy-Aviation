@@ -157,7 +157,27 @@ nav .icon {
 		font-size: 14px;
 	}
 }
-
+nav > ul > li:first-child ul,
+nav > ul > li:nth-child(2) ul {
+	position: absolute;
+	top: 70%;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	display: none;
+}
+nav > ul > li:first-child ul li,
+nav > ul > li:nth-child(2) ul li {
+	display: block;
+	padding: 5px;
+	margin: 0;
+}
+nav > ul > li:first-child:hover .links {
+	display: block;
+}
+nav > ul > li:nth-child(2):hover .link {
+	display: block;
+}
 /* start-main titl */
 .main-title {
 	position: relative;
